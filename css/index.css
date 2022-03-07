@@ -10,8 +10,31 @@
 .sidenav {
     width: 180px;
     height: 590px;
+    position: relative;
 
 }
+
+.sidenav ul li {
+    text-align: center;
+    width: 100px;
+}
+
+.sidenav .mask {
+    position: absolute;
+
+    width: 595px;
+    height: 590px;
+    background-color: #ccc;
+    display: none;
+    left: 193px;
+    top: 0;
+    z-index: 33;
+}
+
+.sidenav:hover .mask {
+    display: block;
+}
+
 
 .mainbanner {
     width: 595px;
@@ -62,7 +85,7 @@ a {
     height: 590px;
     overflow: hidden;
     position: relative;
-   
+
 }
 
 .slideBox .hd {
@@ -90,20 +113,22 @@ a {
     background: #ccc;
     cursor: pointer;
     border-radius: 50%;
- cursor: pointer;
- position: relative;
+    cursor: pointer;
+    position: relative;
 }
-.slideBox .hd ul li span{
-display: block;
-width: 11px;
-height: 11px;
-background:#fff;
-border-radius: 50%;
-position: absolute;
-left: 2px;
-top: 2px;
 
-} 
+.slideBox .hd ul li span {
+    display: block;
+    width: 11px;
+    height: 11px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+
+}
+
 .slideBox .hd ul li.on {
     background: #f00;
     color: #fff;
